@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Canvas Quiz Solver",
+  "version": "1.0.1",
+  "description": "zzz",
+  "author": "deyvisml.dev@gmail.com",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "css": ["scripts/style.css"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}
